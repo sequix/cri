@@ -39,6 +39,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
+	stargz "github.com/containerd/stargz-snapshotter/stargz/handler"
 
 	criconfig "github.com/containerd/cri/pkg/config"
 )
@@ -117,6 +118,7 @@ func (c *criService) PullImage(ctx context.Context, r *runtime.PullImageRequest)
 		containerd.WithPullLabel(imageLabelKey, imageLabelValue),
 		containerd.WithMaxConcurrentDownloads(c.config.MaxConcurrentDownloads),
 		containerd.WithImageHandler(imageHandler),
+		containerd.WithImageHandlerWrapper(stargz.AppendInfoHandlerWrapper(imageRef)),
 	}
 
 	pullOpts = append(pullOpts, c.encryptedImagesPullOpts()...)
