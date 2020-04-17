@@ -24,8 +24,8 @@ import (
 	"golang.org/x/net/context"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	containerstore "github.com/containerd/cri/pkg/store/container"
-	imagestore "github.com/containerd/cri/pkg/store/image"
+	containerstore "github.com/sequix/cri/pkg/store/container"
+	imagestore "github.com/sequix/cri/pkg/store/image"
 )
 
 func getContainerStatusTestData() (*containerstore.Metadata, *containerstore.Status,

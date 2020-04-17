@@ -32,7 +32,7 @@ import (
 )
 
 // DefaultSandboxCPUshares is default cpu shares for sandbox container.
-// TODO(windows): Revisit cpu shares for windows (https://github.com/containerd/cri/issues/1297)
+// TODO(windows): Revisit cpu shares for windows (https://github.com/sequix/cri/issues/1297)
 const DefaultSandboxCPUshares = 2
 
 // WithRelativeRoot sets the root for the container

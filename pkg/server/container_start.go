@@ -29,11 +29,11 @@ import (
 	"golang.org/x/net/context"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	ctrdutil "github.com/containerd/cri/pkg/containerd/util"
-	cioutil "github.com/containerd/cri/pkg/ioutil"
-	cio "github.com/containerd/cri/pkg/server/io"
-	containerstore "github.com/containerd/cri/pkg/store/container"
-	sandboxstore "github.com/containerd/cri/pkg/store/sandbox"
+	ctrdutil "github.com/sequix/cri/pkg/containerd/util"
+	cioutil "github.com/sequix/cri/pkg/ioutil"
+	cio "github.com/sequix/cri/pkg/server/io"
+	containerstore "github.com/sequix/cri/pkg/store/container"
+	sandboxstore "github.com/sequix/cri/pkg/store/sandbox"
 )
 
 // StartContainer starts the container.

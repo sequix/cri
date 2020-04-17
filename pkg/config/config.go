@@ -158,10 +158,10 @@ type ImageDecryption struct {
 	// KeyModel specifies the trust model of where keys should reside.
 	//
 	// Details of field usage can be found in:
-	// https://github.com/containerd/cri/tree/master/docs/config.md
+	// https://github.com/sequix/cri/tree/master/docs/config.md
 	//
 	// Details of key models can be found in:
-	// https://github.com/containerd/cri/tree/master/docs/decryption.md
+	// https://github.com/sequix/cri/tree/master/docs/decryption.md
 	KeyModel string `toml:"key_model" json:"keyModel"`
 }
 

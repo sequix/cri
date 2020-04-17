@@ -39,10 +39,10 @@ import (
 	"k8s.io/kubernetes/pkg/kubelet/remote"
 	kubeletutil "k8s.io/kubernetes/pkg/kubelet/util"
 
-	criconfig "github.com/containerd/cri/pkg/config"
-	"github.com/containerd/cri/pkg/constants"
-	"github.com/containerd/cri/pkg/server"
-	"github.com/containerd/cri/pkg/util"
+	criconfig "github.com/sequix/cri/pkg/config"
+	"github.com/sequix/cri/pkg/constants"
+	"github.com/sequix/cri/pkg/server"
+	"github.com/sequix/cri/pkg/util"
 )
 
 const (

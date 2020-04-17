@@ -39,10 +39,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"k8s.io/klog"
 
-	criconfig "github.com/containerd/cri/pkg/config"
-	"github.com/containerd/cri/pkg/constants"
-	criplatforms "github.com/containerd/cri/pkg/containerd/platforms"
-	"github.com/containerd/cri/pkg/server"
+	criconfig "github.com/sequix/cri/pkg/config"
+	"github.com/sequix/cri/pkg/constants"
+	criplatforms "github.com/sequix/cri/pkg/containerd/platforms"
+	"github.com/sequix/cri/pkg/server"
 )
 
 // TODO(random-liu): Use github.com/pkg/errors for our errors.

@@ -6,7 +6,7 @@ Update the version of containerd located in `containerd/cri/vendor.conf`
 to the latest version of containerd for the desired branch of containerd,
 and make sure all tests in CI pass https://k8s-testgrid.appspot.com/sig-node-containerd.
 ## Step 2: Cut the release
-Draft and tag a new release in https://github.com/containerd/cri/releases.
+Draft and tag a new release in https://github.com/sequix/cri/releases.
 ## Step 3: Update `cri` version in containerd
 Push a PR to `containerd/containerd` that updates the version of
 `containerd/cri` in `containerd/containerd/vendor.conf` to the newly

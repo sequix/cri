@@ -19,7 +19,7 @@ package server
 import (
 	"testing"
 
-	"github.com/containerd/cri/pkg/config"
+	"github.com/sequix/cri/pkg/config"
 	"github.com/stretchr/testify/assert"
 )
 

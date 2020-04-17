@@ -30,8 +30,8 @@ import (
 	imagespec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 
-	storeutil "github.com/containerd/cri/pkg/store"
-	"github.com/containerd/cri/pkg/util"
+	storeutil "github.com/sequix/cri/pkg/store"
+	"github.com/sequix/cri/pkg/util"
 )
 
 // Image contains all resources associated with the image. All fields

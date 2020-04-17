@@ -18,6 +18,6 @@ limitations under the License.
 
 package testing
 
-import osInterface "github.com/containerd/cri/pkg/os"
+import osInterface "github.com/sequix/cri/pkg/os"
 
 var _ osInterface.UNIX = &FakeOS{}

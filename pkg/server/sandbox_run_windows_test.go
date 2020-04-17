@@ -26,8 +26,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	"github.com/containerd/cri/pkg/annotations"
-	"github.com/containerd/cri/pkg/containerd/opts"
+	"github.com/sequix/cri/pkg/annotations"
+	"github.com/sequix/cri/pkg/containerd/opts"
 )
 
 func getRunPodSandboxTestData() (*runtime.PodSandboxConfig, *imagespec.ImageConfig, func(*testing.T, string, *runtimespec.Spec)) {

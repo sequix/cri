@@ -28,9 +28,9 @@ import (
 	"golang.org/x/net/context"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	ctrdutil "github.com/containerd/cri/pkg/containerd/util"
-	"github.com/containerd/cri/pkg/store"
-	containerstore "github.com/containerd/cri/pkg/store/container"
+	ctrdutil "github.com/sequix/cri/pkg/containerd/util"
+	"github.com/sequix/cri/pkg/store"
+	containerstore "github.com/sequix/cri/pkg/store/container"
 )
 
 // StopContainer stops a running container with a grace period (i.e., timeout).

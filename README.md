@@ -7,13 +7,13 @@
 *Note: The standalone `cri-containerd` binary is end-of-life. `cri-containerd` is
 transitioning from a standalone binary that talks to containerd to a plugin within
 containerd. This github branch is for the `cri` plugin. See
-[standalone-cri-containerd branch](https://github.com/containerd/cri/tree/standalone-cri-containerd)
+[standalone-cri-containerd branch](https://github.com/sequix/cri/tree/standalone-cri-containerd)
 for information about the standalone version of `cri-containerd`.*
 
 *Note: You need to [drain your node](https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/) before upgrading from standalone `cri-containerd` to containerd with `cri` plugin.*
 
 [![Build Status](https://api.travis-ci.org/containerd/cri.svg?style=flat-square)](https://travis-ci.org/containerd/cri)
-[![Go Report Card](https://goreportcard.com/badge/github.com/containerd/cri)](https://goreportcard.com/report/github.com/containerd/cri)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sequix/cri)](https://goreportcard.com/report/github.com/sequix/cri)
 
 `cri` is a [containerd](https://containerd.io/) plugin implementation of Kubernetes [container runtime interface (CRI)](https://github.com/kubernetes/cri-api/blob/master/pkg/apis/runtime/v1alpha2/api.proto).
 

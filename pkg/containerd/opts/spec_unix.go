@@ -39,8 +39,8 @@ import (
 	"golang.org/x/sys/unix"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	osinterface "github.com/containerd/cri/pkg/os"
-	"github.com/containerd/cri/pkg/util"
+	osinterface "github.com/sequix/cri/pkg/os"
+	"github.com/sequix/cri/pkg/util"
 )
 
 // WithAdditionalGIDs adds any additional groups listed for a particular user in the

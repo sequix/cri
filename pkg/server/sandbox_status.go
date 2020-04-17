@@ -28,7 +28,7 @@ import (
 	"golang.org/x/net/context"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	sandboxstore "github.com/containerd/cri/pkg/store/sandbox"
+	sandboxstore "github.com/sequix/cri/pkg/store/sandbox"
 )
 
 // PodSandboxStatus returns the status of the PodSandbox.
@@ -133,7 +133,7 @@ type SandboxInfo struct {
 	Snapshotter string `json:"snapshotter"`
 	// Note: a new field `RuntimeHandler` has been added into the CRI PodSandboxStatus struct, and
 	// should be set. This `RuntimeHandler` field will be deprecated after containerd 1.3 (tracked
-	// in https://github.com/containerd/cri/issues/1064).
+	// in https://github.com/sequix/cri/issues/1064).
 	RuntimeHandler string                    `json:"runtimeHandler"` // see the Note above
 	RuntimeType    string                    `json:"runtimeType"`
 	RuntimeOptions interface{}               `json:"runtimeOptions"`

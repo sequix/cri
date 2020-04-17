@@ -27,8 +27,8 @@ import (
 	"github.com/stretchr/testify/require"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	"github.com/containerd/cri/pkg/config"
-	"github.com/containerd/cri/pkg/containerd/opts"
+	"github.com/sequix/cri/pkg/config"
+	"github.com/sequix/cri/pkg/containerd/opts"
 )
 
 func checkMount(t *testing.T, mounts []runtimespec.Mount, src, dest, typ string,

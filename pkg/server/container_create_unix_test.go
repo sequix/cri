@@ -39,12 +39,12 @@ import (
 	"github.com/stretchr/testify/require"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	"github.com/containerd/cri/pkg/annotations"
-	"github.com/containerd/cri/pkg/config"
-	"github.com/containerd/cri/pkg/containerd/opts"
-	ctrdutil "github.com/containerd/cri/pkg/containerd/util"
-	ostesting "github.com/containerd/cri/pkg/os/testing"
-	"github.com/containerd/cri/pkg/util"
+	"github.com/sequix/cri/pkg/annotations"
+	"github.com/sequix/cri/pkg/config"
+	"github.com/sequix/cri/pkg/containerd/opts"
+	ctrdutil "github.com/sequix/cri/pkg/containerd/util"
+	ostesting "github.com/sequix/cri/pkg/os/testing"
+	"github.com/sequix/cri/pkg/util"
 )
 
 func getCreateContainerTestData() (*runtime.ContainerConfig, *runtime.PodSandboxConfig,

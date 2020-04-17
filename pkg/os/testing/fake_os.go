@@ -22,7 +22,7 @@ import (
 
 	containerdmount "github.com/containerd/containerd/mount"
 
-	osInterface "github.com/containerd/cri/pkg/os"
+	osInterface "github.com/sequix/cri/pkg/os"
 )
 
 // CalledDetail is the struct contains called function name and arguments.

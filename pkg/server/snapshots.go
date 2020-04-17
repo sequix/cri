@@ -25,8 +25,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	ctrdutil "github.com/containerd/cri/pkg/containerd/util"
-	snapshotstore "github.com/containerd/cri/pkg/store/snapshot"
+	ctrdutil "github.com/sequix/cri/pkg/containerd/util"
+	snapshotstore "github.com/sequix/cri/pkg/store/snapshot"
 )
 
 // snapshotsSyncer syncs snapshot stats periodically. imagefs info and container stats

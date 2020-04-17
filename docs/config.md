@@ -207,7 +207,7 @@ version = 2
   [plugins."io.containerd.grpc.v1.cri".image_decryption]
     # key_model defines the name of the key model used for how the cri obtains
     # keys used for decryption of encrypted container images.
-    # The [decryption document](https://github.com/containerd/cri/blob/master/docs/decryption.md)
+    # The [decryption document](https://github.com/sequix/cri/blob/master/docs/decryption.md)
     # contains additional information about the key models available. 
     #
     # Set of available string options: {"", "node"}
@@ -215,7 +215,7 @@ version = 2
     # disabling image decryption.
     #
     # In order to use the decryption feature, additional configurations must be made.
-    # The [decryption document](https://github.com/containerd/cri/blob/master/docs/decryption.md)
+    # The [decryption document](https://github.com/sequix/cri/blob/master/docs/decryption.md)
     # provides information of how to set up stream processors and the containerd imgcrypt decoder
     # with the appropriate key models.
     #

@@ -32,15 +32,15 @@ import (
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 	"k8s.io/kubernetes/pkg/kubelet/server/streaming"
 
-	"github.com/containerd/cri/pkg/atomic"
-	criconfig "github.com/containerd/cri/pkg/config"
-	ctrdutil "github.com/containerd/cri/pkg/containerd/util"
-	osinterface "github.com/containerd/cri/pkg/os"
-	"github.com/containerd/cri/pkg/registrar"
-	containerstore "github.com/containerd/cri/pkg/store/container"
-	imagestore "github.com/containerd/cri/pkg/store/image"
-	sandboxstore "github.com/containerd/cri/pkg/store/sandbox"
-	snapshotstore "github.com/containerd/cri/pkg/store/snapshot"
+	"github.com/sequix/cri/pkg/atomic"
+	criconfig "github.com/sequix/cri/pkg/config"
+	ctrdutil "github.com/sequix/cri/pkg/containerd/util"
+	osinterface "github.com/sequix/cri/pkg/os"
+	"github.com/sequix/cri/pkg/registrar"
+	containerstore "github.com/sequix/cri/pkg/store/container"
+	imagestore "github.com/sequix/cri/pkg/store/image"
+	sandboxstore "github.com/sequix/cri/pkg/store/sandbox"
+	snapshotstore "github.com/sequix/cri/pkg/store/snapshot"
 )
 
 // grpcServices are all the grpc services provided by cri containerd.

@@ -35,18 +35,18 @@ import (
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 	"k8s.io/kubernetes/pkg/util/bandwidth"
 
-	"github.com/containerd/cri/pkg/annotations"
-	criconfig "github.com/containerd/cri/pkg/config"
-	customopts "github.com/containerd/cri/pkg/containerd/opts"
-	ctrdutil "github.com/containerd/cri/pkg/containerd/util"
-	"github.com/containerd/cri/pkg/netns"
-	sandboxstore "github.com/containerd/cri/pkg/store/sandbox"
-	"github.com/containerd/cri/pkg/util"
+	"github.com/sequix/cri/pkg/annotations"
+	criconfig "github.com/sequix/cri/pkg/config"
+	customopts "github.com/sequix/cri/pkg/containerd/opts"
+	ctrdutil "github.com/sequix/cri/pkg/containerd/util"
+	"github.com/sequix/cri/pkg/netns"
+	sandboxstore "github.com/sequix/cri/pkg/store/sandbox"
+	"github.com/sequix/cri/pkg/util"
 )
 
 func init() {
 	typeurl.Register(&sandboxstore.Metadata{},
-		"github.com/containerd/cri/pkg/store/sandbox", "Metadata")
+		"github.com/sequix/cri/pkg/store/sandbox", "Metadata")
 }
 
 // RunPodSandbox creates and starts a pod-level sandbox. Runtimes should ensure

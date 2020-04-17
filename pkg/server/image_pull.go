@@ -41,7 +41,7 @@ import (
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 	stargz "github.com/containerd/stargz-snapshotter/stargz/handler"
 
-	criconfig "github.com/containerd/cri/pkg/config"
+	criconfig "github.com/sequix/cri/pkg/config"
 )
 
 // For image management:

@@ -45,7 +45,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 
-	osinterface "github.com/containerd/cri/pkg/os"
+	osinterface "github.com/sequix/cri/pkg/os"
 )
 
 const nsRunDir = "/var/run/netns"

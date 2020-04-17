@@ -37,7 +37,7 @@ import (
 	_ "github.com/containerd/containerd/services/snapshots"
 	_ "github.com/containerd/containerd/services/tasks"
 	_ "github.com/containerd/containerd/services/version"
-	_ "github.com/containerd/cri"
+	_ "github.com/sequix/cri"
 
 	"github.com/containerd/containerd/cmd/containerd/command"
 	"github.com/sirupsen/logrus"

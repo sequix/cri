@@ -23,8 +23,8 @@ import (
 	"github.com/docker/docker/pkg/truncindex"
 	runtime "k8s.io/cri-api/pkg/apis/runtime/v1alpha2"
 
-	cio "github.com/containerd/cri/pkg/server/io"
-	"github.com/containerd/cri/pkg/store"
+	cio "github.com/sequix/cri/pkg/server/io"
+	"github.com/sequix/cri/pkg/store"
 )
 
 // Container contains all resources associated with the container. All methods to

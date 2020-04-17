@@ -24,7 +24,7 @@ FOCUS="${FOCUS:-"Conformance"}"
 SKIP="${SKIP:-""}"
 REPORT_DIR="${REPORT_DIR:-"/c/_artifacts"}"
 
-repo="$GOPATH/src/github.com/containerd/cri"
+repo="$GOPATH/src/github.com/sequix/cri"
 mkdir -p "${repo}"
 cd "${repo}"
 tar -xzf "${REPO_TAR}"

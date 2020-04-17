@@ -22,7 +22,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	containerstore "github.com/containerd/cri/pkg/store/container"
+	containerstore "github.com/sequix/cri/pkg/store/container"
 )
 
 // TestSetContainerRemoving tests setContainerRemoving sets removing

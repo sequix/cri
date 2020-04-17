@@ -22,7 +22,7 @@ ifeq ($(GOOS),windows)
 	ONI = "-"
 endif
 EPOCH_TEST_COMMIT := f9e02affccd51702191e5312665a16045ffef8ab
-PROJECT := github.com/containerd/cri
+PROJECT := github.com/sequix/cri
 BINDIR := ${DESTDIR}/usr/local/bin
 BUILD_DIR := _output
 # VERSION is derived from the current commit for HEAD. Version is used
