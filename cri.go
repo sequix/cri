@@ -17,6 +17,7 @@ limitations under the License.
 package cri
 
 import (
+	"fmt"
 	"flag"
 	"path/filepath"
 
