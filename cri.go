@@ -48,6 +48,7 @@ import (
 // TODO(random-liu): Use github.com/pkg/errors for our errors.
 // Register CRI service plugin
 func init() {
+	fmt.Println("You are using custom cri for stargz-snapshotter.")
 	config := criconfig.DefaultConfig()
 	plugin.Register(&plugin.Registration{
 		Type:   plugin.GRPCPlugin,

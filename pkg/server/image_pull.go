@@ -118,7 +118,7 @@ func (c *criService) PullImage(ctx context.Context, r *runtime.PullImageRequest)
 		containerd.WithPullLabel(imageLabelKey, imageLabelValue),
 		containerd.WithMaxConcurrentDownloads(c.config.MaxConcurrentDownloads),
 		containerd.WithImageHandler(imageHandler),
-		containerd.WithImageHandlerWrapper(stargz.AppendInfoHandlerWrapper(imageRef)),
+		containerd.WithImageHandlerWrapper(stargz.AppendInfoHandlerWrapper(imageRef, 10*1024*1024)),
 	}
 
 	pullOpts = append(pullOpts, c.encryptedImagesPullOpts()...)
